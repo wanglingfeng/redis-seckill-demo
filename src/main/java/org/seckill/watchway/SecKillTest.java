@@ -16,7 +16,7 @@ public class SecKillTest {
         final Jedis jedis = new Jedis();
 
         jedis.set("stock", "10"); // 重置库存为10
-        jedis.del("successUsers", "failureUsers"); // 清空抢成功的和没有成功的
+        jedis.del("successUsers", "failureUsers"); // 清空抢成功的用户和没有成功的用户的集合
         jedis.close();
 
         // 测试同时一千人访问
