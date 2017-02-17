@@ -9,6 +9,8 @@ import java.util.UUID;
 /**
  * 使用redis的watch实现秒杀功能
  *
+ * redis的事物都是原子操作，来实现事物功能
+ *
  * Created by lfwang on 2017/2/16.
  */
 public class SecKillRunnable implements Runnable {
